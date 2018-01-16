@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Prime_finder\Prime_finder\obj\Debug\Prime_finder.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Prime_finder\Prime_finder\obj\Debug\Prime_finder.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Prime_finder\Prime_finder\bin\Debug\Prime_finder.exe.config
+C:\Users\User\source\repos\Prime_finder\Prime_finder\bin\Debug\Prime_finder.exe
+C:\Users\User\source\repos\Prime_finder\Prime_finder\bin\Debug\Prime_finder.pdb
+C:\Users\User\source\repos\Prime_finder\Prime_finder\obj\Debug\Prime_finder.exe
+C:\Users\User\source\repos\Prime_finder\Prime_finder\obj\Debug\Prime_finder.pdb
