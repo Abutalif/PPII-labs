@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Complex_sum\Complex_sum\bin\Debug\Complex_sum.exe.config
+C:\Users\User\source\repos\Complex_sum\Complex_sum\bin\Debug\Complex_sum.exe
+C:\Users\User\source\repos\Complex_sum\Complex_sum\bin\Debug\Complex_sum.pdb
+C:\Users\User\source\repos\Complex_sum\Complex_sum\obj\Debug\Complex_sum.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Complex_sum\Complex_sum\obj\Debug\Complex_sum.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Complex_sum\Complex_sum\obj\Debug\Complex_sum.exe
+C:\Users\User\source\repos\Complex_sum\Complex_sum\obj\Debug\Complex_sum.pdb
