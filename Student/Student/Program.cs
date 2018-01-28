@@ -24,18 +24,27 @@ namespace Student
 
         public void WriteGPA()
         {
-            GPA = int.Parse(Console.ReadLine());
+            GPA = double.Parse(Console.ReadLine());
         }
 
         public override string ToString()
         {
-            return this.FirstName + " " + this.LastName + " " + this.GPA;
+            return FirstName + " " + LastName + " " + GPA;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
+            Student s = new Student();
+            s.WriteFirstName();
+            s.WriteLastName();
+            s.WriteGPA();
+
+            Console.WriteLine("Student");
+            Console.WriteLine(s);
+
+            Console.ReadKey();
         }
     }
 }
