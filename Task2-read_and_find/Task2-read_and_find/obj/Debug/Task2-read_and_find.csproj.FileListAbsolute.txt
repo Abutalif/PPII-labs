@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\bin\Debug\Task2-read_and_find.exe.config
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\bin\Debug\Task2-read_and_find.exe
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\bin\Debug\Task2-read_and_find.pdb
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\obj\Debug\Task2-read_and_find.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\obj\Debug\Task2-read_and_find.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\obj\Debug\Task2-read_and_find.exe
+C:\Users\User\source\repos\Task2-read_and_find\Task2-read_and_find\obj\Debug\Task2-read_and_find.pdb
