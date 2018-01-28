@@ -29,12 +29,26 @@ namespace Rectangle_Circle
         {
             circumference = diameter*Math.PI;
         }
+
+        public override string ToString()
+        {
+            string CircleInfo = "diameter= " + diameter + ", area = " + area +  ", circiumference = " + circumference; 
+            return CircleInfo;
+        }
     }
 
 
     class Rectangle
     {
-        double width, height, area, perimeter;
+        public double width, height, area, perimeter;
+
+        public Rectangle()
+        {
+            width = 1;
+            height = 1;
+        }
+
+       
 
         public void getWidth()
         {
@@ -56,6 +70,12 @@ namespace Rectangle_Circle
             perimeter = 2 * (height + width);
         }
 
+        public override string ToString()
+        {
+            string RectangleInfo = "width = " + width + ", height = " + height + ", area = " + area + ", perimeter = " + perimeter;
+            return RectangleInfo;
+        }
+
 
     }
 
@@ -63,6 +83,30 @@ namespace Rectangle_Circle
     {
         static void Main(string[] args)
         {
+            Rectangle r = new Rectangle();
+
+            r.getHeight();
+            r.getWidth();
+            r.getArea();
+            r.getPerimeter();
+
+            Console.WriteLine("Rectangle");
+
+            Console.WriteLine(r);
+
+
+            Circle c = new Circle();
+
+            c.getRadius();
+            c.getDiameter();
+            c.getArea();
+            c.getCircumference();
+
+            Console.WriteLine("Circle");
+
+            Console.WriteLine(c);
+
+            Console.ReadKey();
         }
     }
 }

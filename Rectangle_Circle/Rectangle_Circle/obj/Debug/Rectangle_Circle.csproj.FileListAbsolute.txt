@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\bin\Debug\Rectangle_Circle.exe.config
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\bin\Debug\Rectangle_Circle.exe
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\bin\Debug\Rectangle_Circle.pdb
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\obj\Debug\Rectangle_Circle.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\obj\Debug\Rectangle_Circle.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\obj\Debug\Rectangle_Circle.exe
+C:\Users\User\source\repos\Rectangle_Circle\Rectangle_Circle\obj\Debug\Rectangle_Circle.pdb
