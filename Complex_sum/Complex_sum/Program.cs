@@ -81,8 +81,21 @@ namespace Complex_sum
     {
         static void Main(string[] args)
         {
-            Complex a = new Complex(1, 2);
-            Complex b = new Complex(1, 2);
+
+            int an, ad, bn, bd;
+            Console.WriteLine("Write the first complex: \n");
+            an = int.Parse(Console.ReadLine());
+            Console.Write("/");
+            ad = int.Parse(Console.ReadLine());
+            Console.WriteLine("Write the second complex: ");
+            bn = int.Parse(Console.ReadLine());
+            Console.Write("/");
+            bd = int.Parse(Console.ReadLine());
+
+
+
+            Complex a = new Complex(an, ad);
+            Complex b = new Complex(bn, bd);
 
             Console.WriteLine(a + b);
 
