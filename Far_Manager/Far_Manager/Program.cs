@@ -5,21 +5,26 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
+//not working as expected yet
+
 namespace Far_Manager
 {
     class Program
     {
-        
-        public static void OpenFolder (DirectoryInfo current, int cursor)
+        public static void ShowFolderContent (DirectoryInfo current, int cursor)
         {
+            //create arrays of all folders and files in the current directory
             FileSystemInfo[] folders = current.GetDirectories();
             FileSystemInfo[] files = current.GetFiles();
-
+            
+            //check for background colour integrity
             Console.BackgroundColor = ConsoleColor.White;
 
-            for (int i = 0; i<folders.Length; i++)
+            //maximum number of viewed items 20
+           
+            for(int i = 0; i<folders.Length; i++)
             {
-                if(cursor==i)
+                if (cursor == i)
                 {
                     Console.BackgroundColor = ConsoleColor.Cyan;
                 }
@@ -30,11 +35,12 @@ namespace Far_Manager
 
                 Console.ForegroundColor = ConsoleColor.Black;
                 Console.WriteLine(folders[i].Name);
-
+                
             }
+
             for(int i = 0; i<files.Length; i++)
             {
-                if(cursor == i + folders.Length)
+                if (cursor == i + folders.Length)
                 {
                     Console.BackgroundColor = ConsoleColor.Cyan;
                 }
@@ -42,63 +48,38 @@ namespace Far_Manager
                 {
                     Console.BackgroundColor = ConsoleColor.White;
                 }
-
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(files[i].Name);
 
             }
-            
+
+            Console.SetCursorPosition(0, cursor);
         }
 
-        /*public static void Controls(int pos)
-        {
 
-            ConsoleKeyInfo pressed = Console.ReadKey();
-            
-            switch(pressed.Key)
-            {
-                case ConsoleKey.UpArrow:
-                    pos--;
-                    break;
-                case ConsoleKey.DownArrow:
-                    pos++;
-                    break;
-                case ConsoleKey.Enter:
-
-                    break;
-                case ConsoleKey.Escape:
-
-                    break;
-                case ConsoleKey.Q:
-
-                    break;
-
-            }
-        }*/
-
+ 
         public static void Main(String[] args)
         {
-
             Console.CursorVisible = false;
             int cursor = 0;
             bool is_on = true;
-
+            
             DirectoryInfo dir = new DirectoryInfo(@"C:\Users\User\Desktop\user files\КБТУ");
+
+            
 
             while (is_on)
             {
                 Console.Clear();
                 Console.BackgroundColor = ConsoleColor.White;
-                OpenFolder(dir, cursor);
-                // Controls(cursor);
+                ShowFolderContent(dir, cursor);
 
                 ConsoleKeyInfo pressed = Console.ReadKey();
-
                 switch (pressed.Key)
                 {
                     case ConsoleKey.UpArrow:
                         cursor--;
-                        if (cursor < 0)
+                        if (cursor <0)
                         {
                             cursor = dir.GetFileSystemInfos().Length - 1;
                             Console.BackgroundColor = ConsoleColor.White;
@@ -106,6 +87,7 @@ namespace Far_Manager
                         else if (cursor == dir.GetFileSystemInfos().Length - 2)
                             Console.BackgroundColor = ConsoleColor.White;
                         break;
+
                     case ConsoleKey.DownArrow:
                         cursor++;
                         if (cursor > dir.GetFileSystemInfos().Length - 1)
@@ -114,11 +96,13 @@ namespace Far_Manager
                             Console.BackgroundColor = ConsoleColor.White;
                         }
                         break;
+
                     case ConsoleKey.Enter:
                         FileSystemInfo newdir = dir.GetFileSystemInfos()[cursor];
                         if (newdir.GetType() == typeof(DirectoryInfo))
                         {
                             dir = new DirectoryInfo(newdir.FullName);
+                            cursor = 0;
                         }
                         else if(Path.GetExtension(newdir.Name) == ".txt")    
                         {
@@ -127,14 +111,17 @@ namespace Far_Manager
                             StreamReader sr = new StreamReader(fs);
                             string text = sr.ReadToEnd();
                             Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.Black;
                             Console.WriteLine(text);
                             Console.ReadKey();
                         }
                         break;
-                    case ConsoleKey.Escape:
+
+                    case ConsoleKey.Backspace:
                         dir = dir.Parent;
+                        cursor = 0;
                         break;
-                    case ConsoleKey.Q:
+                    case ConsoleKey.Escape:
                         is_on = false;
                         break;
 
@@ -142,5 +129,6 @@ namespace Far_Manager
             }
 
         }
+        
     }
 }
